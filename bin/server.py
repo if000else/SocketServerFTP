@@ -47,6 +47,7 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
                         self.request.send(b'Invalid input!')
                 else:
                     print("client send blank message!")
+                    self.request.close()
         except OSError:
             print("Client [%s] has disconnect!"%self.client_address[0])
 

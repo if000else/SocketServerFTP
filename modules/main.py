@@ -158,9 +158,10 @@ def sz(command,sk):
             for line in f:
                 md5.update(line)
         if md5.hexdigest() == md5_check:  # check passed
+            if os.path.exists("%s/%s"%(Home,filename)):
+                os.remove("%s/%s"%(Home,filename))
             os.rename("%s/%s" % (Home, md5_check), "%s/%s" % (Home, filename))  # rename filename
             print("\033[1;34;1mfile confirm passes,renamed..\033[0m")
-            # self.request.send(b'success,renamed')
         else:
             # self.request.send(b'file crash!!!')
             os.remove("%s/%s" % (Home, md5_check))
