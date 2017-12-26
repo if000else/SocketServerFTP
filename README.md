@@ -8,6 +8,8 @@ Nickname:Huayiqiu
 
 Blog:http://www.cnblogs.com/iforelse
 
+Github: https://github.com/if000else
+
 1. 用户加密认证
 2. 多用户同时登陆
 3. 每个用户有自己的家目录且只能访问自己的家目录
