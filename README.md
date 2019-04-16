@@ -20,3 +20,67 @@ Github: https://github.com/if000else
 8. 传输过程中现实进度条
 9. 支持断点续传
 
+
+    *admin 123456* to login in local system
+
+    *admin 123456*  to login in server
+
+
+运行：先运行server.py,启动服务，然后运行ftp.py
+
+详细请看.jpg
+
+目录结构：
+
+`SimpleFTP/`
+
+`　　|-- bin/`
+
+`　　　　| |-- ftp.py`
+
+`　　|`
+
+`　　|-- conf/`
+
+`　　　　| |-- settings.py`
+
+`　　|-- database/`
+
+`　　　　|　|-- client/`
+
+`　　　　|　|-- server/`
+
+`　　　　|　|-- users/`
+
+`　　　　| `
+
+`　　|-- report/`
+
+`　　　　|　|-- log/`
+
+`　　　　|　|  |-- access.log`
+
+`　　　　|　|  |-- client.log`
+
+`　　　　|　|  |-- server.log`
+
+`　　　　|　|  |-- services.log`
+        
+`　　　　| `
+
+`　　|-- modules/`
+
+`　　　　| |-- display.py`
+
+`　　　　| |-- log.py`
+
+`　　　　| |-- main.py`
+
+`　　　　| |-- server.py`
+
+`　　　　| |-- funcs.py`
+
+
+`　　　　|`
+
+`　　|-- README`
